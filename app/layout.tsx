@@ -25,8 +25,8 @@ const jetbrains = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} — ${site.tagline}`,
-    template: `%s · ${site.name}`,
+    default: site.shortName,
+    template: `%s · ${site.shortName}`,
   },
   description: site.description,
   applicationName: site.name,
@@ -43,7 +43,6 @@ export const metadata: Metadata = {
     title: site.name,
     description: site.description,
   },
-  icons: { icon: "/logo.png", apple: "/logo.png" },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
