@@ -9,7 +9,7 @@ export const site = {
   /** E.164 sin + : México +52 56 1312 5153 */
   whatsapp: process.env.NEXT_PUBLIC_WHATSAPP ?? "525613125153",
   whatsappDisplay: "+52 56 1312 5153",
-  github: process.env.NEXT_PUBLIC_GITHUB ?? "https://github.com",
+  github: process.env.NEXT_PUBLIC_GITHUB ?? "https://github.com/abrahammettatobal-lang/mettat.apps",
   locale: "es_MX",
 } as const;
 
